@@ -10,3 +10,5 @@ type PoshPeopleVehicle = {
 };
 
 type checkVehicle<T> = T extends keyof PoshPeopleVehicle ? true : false;
+
+type HasBike = checkVehicle<"super car">;
